@@ -1,0 +1,56 @@
+// Base styles
+.btn {
+  display: inline-block;
+  font-family: $font-family-base;
+  color: $body-text;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: unset;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-border-radius);
+  @include transition($btn-transition);
+  outline: 0 !important;
+  z-index: 1;
+  position: relative;
+
+  &:focus {
+    box-shadow: unset;
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    pointer-events: none;
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+}
+
+.btn-primary {
+  color: $primary;
+  border: 1px solid $primary;
+  background-image: -webkit-linear-gradient(100deg, transparent 50%, $primary 50%);
+  background-image: linear-gradient(100deg, transparent 50%, $primary 50%);
+  background-size: 300%;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+
+  .chervon-1 {
+    transition: all 300ms ease-in-out;
+  }
+
+  &:hover {
+    .chervon-1 {
+      stroke: white;
+    }
+
+    background-position: 100%;
+    color: #fff;
+  }
+}

@@ -1,0 +1,100 @@
+//form
+.validation_message ,#gform_1_validation_container {
+  display: none!important;
+}
+.gf_submission_limit_message {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+//digits form
+.dig_wc_countrycodecontainer , .countrycode {
+  height: 100%
+}
+.digits_login_via_otp {
+  @extend .btn , .btn-primary;
+}
+.countrycode  {
+  border: 0!important;
+}
+.gform_drop_area {
+  @extend .bg-white, .bg-opacity-10;
+  padding: 15px !important;
+}
+.gform_button_select_files {
+  background-color:$secondary!important;
+  @extend .rounded-1;
+}
+.gform-theme-field-control::before {
+  color:$secondary!important;
+}
+ .gform_drop_instructions {
+  display: none !important;
+}
+#input_3_2 {
+  @extend .rounded-1 , .border-secondary;
+  -moz-appearance: textfield;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; // Ensure there is no margin
+  }
+}
+.gfield_fileupload_progressbar_progress {
+  background-color: $success!important;
+}
+//submit button
+#gform_submit_button_3 {
+  width: 160px;
+  margin: auto;
+  background: linear-gradient(45deg, $white 5%, $secondary 42%) !important;
+  background-size: 200% 100% !important;
+  color: #fff!important;
+  border: none!important;
+  border-radius: 15px;
+  font-size:1.5rem;
+  padding: 15px 30px!important;
+  font-weight: bold!important;
+  transition: all .6s cubic-bezier(0.84, 0.04, 0.58, 1) !important;
+  &:hover {
+    background-position: -100% 0!important;
+  }
+}
+#gform_preview_1_1 {
+  max-height: 30vh;
+  overflow-y: scroll;
+  padding: 0 30px;
+}
+.gform_drop_area {
+  @extend .rounded-1;
+  border-color:$secondary!important;
+}
+label.gfield_label.gform-field-label {
+  font-size: 20px;
+  color: $secondary;
+}
+.form-label {
+  font-size: 20px!important;
+}
+.gfield_description {
+  font-weight: 500!important;
+  font-size: 19px!important;
+  color:$dark!important;
+}
+.gform-loader {
+  border-color: $secondary $secondary $secondary transparent !important;
+  border-width: 5px!important;
+  position: fixed!important;
+  top: calc(50% - 50px) !important;
+  left: calc(50% - 50px) !important;
+  width: 100px!important;
+  height: 100px!important;
+}
+#dig_man_resend_otp_btn {
+  float:unset!important;
+}
+@media (max-width: 1400px) and (min-width: 640px) {
+  #field_3_2 {
+    grid-column: span 5!important;
+  }
+}

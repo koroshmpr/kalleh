@@ -1,0 +1,58 @@
+//Theme Colors
+
+$nav-def: #6C757D;
+
+$background-color:#E9E9E9;
+$body-color: #6C757D;
+$body-text: $body-color;
+
+$primary:  #CF2031;
+$secondary:  #F36F21;;
+$info : #FFDD00;
+$warning: #D43829;
+$dark : #000;
+$dark-subtle : #58595B;
+
+//fonts
+$small: 0.87rem;
+$font-size-sm:$small;
+$font-sizes: (
+        1: 2.5rem,
+        2: 2rem,
+        3: 1.75rem,
+        4: 1.5rem,
+        5: 1.25rem,
+        6: 1rem
+);
+$enable-negative-margins: true;
+$spacer: 1rem;
+$spacers: (
+        0: 0,
+        1: $spacer * .25,
+        2: $spacer * .5,
+        3: $spacer,
+        4: $spacer * 2,
+        5: $spacer * 3,
+);
+$font-family-base: Peyda, 'sans-serif', 'Nunito';
+$font-weight-normal: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: 900;
+$font-weight-base: $font-weight-normal;
+
+//border
+$border-radius-sm: 10px;
+$border-radius-lg: 30px;
+
+//base class variables
+$transition-base: all .4s;
+$transition-fast: all .2s ease-in-out;
+$transition: all .4s ease-in-out;
+$transition-slow: all .6s;
+
+//offcanvas class variables
+$offcanvas-vertical-height:calc(100vh - 90px);
+$offcanvas-transition-duration:.7s;
+
+//button
+$btn-border-radius : 4px
